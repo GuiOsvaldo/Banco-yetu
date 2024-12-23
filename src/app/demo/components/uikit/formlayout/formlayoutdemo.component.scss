@@ -1,0 +1,22 @@
+:host ::ng-deep {
+    .p-datatable {
+      background-color: #f0f8ff;
+    }
+  
+    .p-datatable-header {
+      background-color: #f0f0f0; 
+    }
+  
+    .p-datatable-tbody > tr {
+      background-color: #ffffff;
+    }
+  
+    .p-datatable-tbody > tr:nth-child(even) {
+      background-color: #f0f0f0; 
+    }
+  
+    .p-datatable-tbody > tr:hover {
+      background-color: #e0e0e0; 
+    }
+  }
+  

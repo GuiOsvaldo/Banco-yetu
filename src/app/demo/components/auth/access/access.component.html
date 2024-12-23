@@ -1,0 +1,40 @@
+<div>
+    <nav class="marquee-container">
+      <ul class="marquee-content">
+        <li> AKZ - Compra - 935.27800 <span style="color: #f2f2f2;"> EUR - VENDA - 19000 </span> </li>
+        <li> AKZ - Compra - 935.27800 <span style="color: #f2f2f2;"> EUR - VENDA - 54000 </span> </li>
+        <li> AKZ - Compra - 935.27800 <span style="color: #f2f2f2;"> EUR - VENDA - 40600 </span> </li>
+        <li> AKZ - Compra - 935.27800 <span style="color: #f2f2f2;"> EUR - VENDA - 7600 </span> </li>
+      </ul>
+      <div class="marquee-icons">
+        <i class="pi pi-user"></i> 
+        <a routerLink="/auth/login"> <i class="pi pi-sign-in"></i> </a>
+      </div>
+    </nav>
+    
+    <nav class="main-nav">
+      <div class="logo">
+        <img src="assets/demo/images/login/8.png" alt="Image" class="mb-3">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#"> Página Inicial </a></li>
+        <li><a href="#"> Cartão Multicaixa </a></li>
+        <li><a href="#"> Ajuda </a></li>
+        <li><a href="#"> Contato </a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="upload-form">
+    <div class="upload-container" (click)="triggerFileInput()" (drop)="onDrop($event)" (dragover)="onDragOver($event)">
+      <div class="upload-message" *ngIf="!pdfPreview">
+        Arraste e solte o BI aqui ou clique para selecionar
+      </div>
+      <div *ngIf="fileName" class="file-preview">{{ fileName }}</div>
+      <embed *ngIf="pdfPreview" [src]="pdfPreview" type="application/pdf" width="100%" height="400px">
+      <input type="file" id="fileInput" (change)="onFileSelected($event)" accept="application/pdf" hidden>
+    </div>
+    
+    <button class="submit-button" (click)="onSubmit()"> Enviar </button>     
+  </div>
+  

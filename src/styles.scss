@@ -1,0 +1,46 @@
+
+
+$gutter: 1rem; //for primeflex grid system
+@import "assets/layout/styles/layout/layout.scss";
+
+/* PrimeNG */
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeflex/primeflex.scss";
+@import "../node_modules/primeicons/primeicons.css";
+
+/* Demos */
+@import "assets/demo/styles/flags/flags.css";
+@import "assets/demo/styles/badges.scss";
+@import "assets/demo/styles/code.scss";
+
+/* Custom styles for p-table */
+:host ::ng-deep .p-table {
+    background-color: #e22f2f !important; /* Background color for the table */
+}
+
+:host ::ng-deep .p-table thead th {
+    background-color: #181939 !important; /* Background color for the table header */
+    color: #412121 !important; /* Text color for the table header */
+}
+
+:host ::ng-deep .p-table tbody tr {
+    background-color: #ffffff !important; /* Background color for the table rows */
+}
+
+:host ::ng-deep .p-table tbody tr:nth-child(even) {
+    background-color: #e9ecef !important; /* Alternate background color for even rows */
+}
+
+:host ::ng-deep .p-table tbody tr:hover {
+    background-color: #d6d6d6 !important; /* Background color on row hover */
+}
+
+:host ::ng-deep .p-table tbody td {
+    color: #333333 !important; /* Text color for table cells */
+}
+
+:host ::ng-deep .p-input-icon-left input {
+    background-color: #f2f2f2 !important; /* Background color for search input */
+    border-color: #ccc !important; /* Border color for search input */
+    color: #333333 !important; /* Text color for search input */
+}

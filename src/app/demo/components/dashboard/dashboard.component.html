@@ -1,0 +1,199 @@
+<h5 class="text-gray-300" style="font-weight: 900;"> DashBoard </h5>
+<span class="text-gray-300"> Banco Yetu , Tradição e Inovação (VerAngola). </span> <br> <br>
+<div class="grid">
+    <div class="col-12 lg:col-8 xl:col-8">
+        <div class="grid">
+            <div class="col-12 lg:col-12 xl:col-12">
+                <p-carousel [value]="images" [numVisible]="1" [numScroll]="3" [circular]="true" [autoplayInterval]="3000"
+                    style="width: 100%; height: 300px;">
+                    <ng-template pTemplate="item" let-item>
+                        <img [src]="item.src" alt="Image"
+                            style="width: 100%; height: 36vh; object-fit: cover; border-radius: 30px; border: 3px solid #3eb410;" />
+                    </ng-template>
+                </p-carousel>
+            </div>
+            <div class="col-12 lg:col-12 xl:col-12">
+               <!-- <div class=" px-4 py-8 md:px-8 lg:px-8">
+                    <div class="text-900 font-bold text-6xl mb-4">Crédito no YETU</div>
+                    <div class="text-700 text-xl mb-6 text-center line-height-3">Crédito à Habilitação.</div>
+            
+                    <div class="grid">
+                        <div class="col-12 lg:col-12">
+                            <div class="p-3 h-full">
+                                <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                                    <div class="text-900 font-medium text-xl mb-2">Basic</div>
+                                    <div class="text-600">Plan description</div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <div class="flex align-items-center">
+                                        <span class="font-bold text-2xl text-900">$9</span>
+                                        <span class="ml-2 font-medium text-600">per month</span>
+                                    </div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <ul class="list-none p-0 m-0 flex-grow-1">
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Arcu vitae elementum</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Dui faucibus in ornare</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Morbi tincidunt augue</span>
+                                        </li>
+                                    </ul>
+                                    <hr class="mb-3 mx-0 border-top-1 border-none surface-border mt-auto" />
+                                    <button pButton pRipple label="Buy Now" class="p-3 w-full mt-auto"></button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 lg:col-12">
+                            <div class="p-3 h-full">
+                                <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                                    <div class="text-900 font-medium text-xl mb-2">Premium</div>
+                                    <div class="text-600">Plan description</div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <div class="flex align-items-center">
+                                        <span class="font-bold text-2xl text-900">$29</span>
+                                        <span class="ml-2 font-medium text-600">per month</span>
+                                    </div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <ul class="list-none p-0 m-0 flex-grow-1">
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Arcu vitae elementum</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Dui faucibus in ornare</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Morbi tincidunt augue</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Duis ultricies lacus sed</span>
+                                        </li>
+                                    </ul>
+                                    <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
+                                    <button pButton pRipple label="Buy Now" class="p-3 w-full"></button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 lg:col-12">
+                            <div class="p-3 h-full">
+                                <div class="shadow-2 p-3 flex flex-column surface-card" style="border-radius: 6px">
+                                    <div class="text-900 font-medium text-xl mb-2">Enterprise</div>
+                                    <div class="text-600">Plan description</div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <div class="flex align-items-center">
+                                        <span class="font-bold text-2xl text-900">$49</span>
+                                        <span class="ml-2 font-medium text-600">per month</span>
+                                    </div>
+                                    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                                    <ul class="list-none p-0 m-0 flex-grow-1">
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Arcu vitae elementum</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Dui faucibus in ornare</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Morbi tincidunt augue</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Duis ultricies lacus sed</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Imperdiet proin</span>
+                                        </li>
+                                        <li class="flex align-items-center mb-3">
+                                            <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                            <span>Nisi scelerisque</span>
+                                        </li>
+                                    </ul>
+                                    <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
+                                    <button pButton pRipple label="Buy Now" class="p-3 w-full p-button-outlined"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div> 
+        </div> 
+    </div>
+
+    <div class="col-12 lg:col-4 xl:col-4">
+        <div class="px-4 py-5 shadow-2 flex flex-column md:flex-row md:align-items-center justify-content-between mb-3"
+            style="border-radius: 1rem; background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(92.54deg, #004d00 47.88%, #000000 100.01%);">
+            <img src="assets/demo/images/login/10.png" height="280px" alt="Image" width="100%" class="mb-3">
+        </div>
+
+    </div>
+
+        <div style="margin-top: -130px;" class="col-12 lg:col-12 xl:col-12"> 
+         
+        <div class="px-4 py-5 md:px-6 lg:px-8">
+            <p style="font-weight:800;" class="text-gray-400"> Total de Créditos e Taxas </p>
+            <div class="grid">
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div style="border-radius: 1rem; background: linear-gradient(0deg, rgba(8, 134, 50, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(92.54deg, #004d00 47.88%, #000000 100.01%);" class="shadow-2 p-3 border-round">
+                        <div class="flex justify-content-between mb-3">
+                            <div>
+                                <span class="block text-500 text-gray-300 font-medium mb-3"> Crédito à Habilitação. </span>
+                                <div class="text-600 font-medium text-gray-300 text-xl"> 100 </div>
+                            </div>
+                            <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width:2.5rem;height:2.5rem">
+                                <i class="pi pi-money-bill text-blue-500 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="text-green-500 font-medium"> 0,15% de desconto </span>
+                        <span class="text-500 text-gray-100"> para clientes Sênior. </span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div style="border-radius: 1rem; background: linear-gradient(0deg, rgba(8, 134, 50, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(92.54deg, #004d00 47.88%, #000000 100.01%);" class="shadow-2 p-3 border-round">
+                        <div class="flex justify-content-between mb-3">
+                            <div>
+                                <span class="block text-500 text-gray-300 font-medium mb-3"> Crédito à Automóvel. </span>
+                                <div class="text-600 font-medium text-gray-300 text-xl"> 200 </div>
+                            </div>
+                            <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width:2.5rem;height:2.5rem">
+                                <i class="pi pi-money-bill text-orange-400 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="text-green-500 font-medium"> 0,8% de desconto </span>
+                        <span class="text-500 text-gray-100"> para clientes Pleno. </span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div style="border-radius: 1rem; background: linear-gradient(0deg, rgba(8, 134, 50, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(92.54deg, #004d00 47.88%, #000000 100.01%);" class="shadow-2 p-3 border-round">
+                        <div class="flex justify-content-between mb-3">
+                            <div>
+                                <span class="block text-500 text-gray-300 font-medium mb-3"> Reembolso do Crédito </span>
+                                <div class="text-600 font-medium text-gray-300 text-xl"> 300 </div>
+                            </div>
+                            <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" style="width:2.5rem;height:2.5rem">
+                                <i class="pi pi-money-bill text-cyan-400 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="text-green-500 font-medium"> 0,3% de desconto </span>
+                        <span class="text-500 text-gray-100"> para clientes Júnior. </span>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    
+
+</div>
